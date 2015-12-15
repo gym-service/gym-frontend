@@ -4,7 +4,7 @@
 angular.module(
     'app', 
     [
-        'app.networkconfig', 'app.statesconfig', 'app.permissions' ,'http-auth-interceptor',
+        'app.networkconfig', 'duScroll','app.statesconfig', 'app.permissions' ,'http-auth-interceptor',
         // 'app.satellizerconfig'
 
     ]

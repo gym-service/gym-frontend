@@ -57,9 +57,8 @@ angular.module('app.statesconfig', ['ui.router'])
     .state('app.home', {
         url: '/home',
         templateUrl: 'templates/home.html',
-        controller: function($scope){
-            
-        },
+        controller : "HomeCtrl", 
+        //controller: function($scope){},
         resolve: {
           
         },
@@ -73,8 +72,7 @@ angular.module('app.statesconfig', ['ui.router'])
     })
 
     .state('app.clublist', {
-    url: "/club",
-    url: "/club/:clubId",  
+    url: "/club", 
     cache : true,
     templateUrl: "templates/club.html",
     controller : "ClubCtrl"  
@@ -191,7 +189,7 @@ angular.module('app.statesconfig', ['ui.router'])
     cache : false,
     templateUrl: "templates/orarilezioni.html",
     controller : "OrarilezioniCtrl"
-    })
+    });
 
 
     $urlRouterProvider.otherwise(function ($injector) {

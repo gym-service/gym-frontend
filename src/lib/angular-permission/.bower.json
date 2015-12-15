@@ -35,7 +35,7 @@
     "tag": "1.1.1",
     "commit": "fc31e3c07408aaedc51e5fedd4bc0c23c4daf934"
   },
-  "_source": "git://github.com/Narzerus/angular-permission.git",
+  "_source": "https://github.com/Narzerus/angular-permission.git",
   "_target": "~1.1.1",
   "_originalSource": "angular-permission"
 }

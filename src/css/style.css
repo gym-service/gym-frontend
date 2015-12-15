@@ -1,0 +1,129 @@
+body {
+background-color: #000;
+margin:0px;
+padding: 0px;
+background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+min-height: 1900px;
+}
+
+
+
+
+
+
+.navbar-default {
+    background-color:rgba(0,0,0,1);   
+    padding: 0px 0;
+    border: 0;
+     -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+}
+
+.navbar-default .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 3px;
+}
+
+
+.navbar.navbar-default.navbar-shrink{
+    margin-bottom:0px;
+    background: rgba(0,0,0,0);
+    border: none;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-size:1.6em;
+    min-height: 190px;
+    padding-top: 100px;
+}
+
+.navbar-default.navbar-shrink .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+}
+
+.navbar-default.navbar-shrink .nav li a:hover,
+.navbar-default.navbar-shrink .nav li a:focus {
+    outline: 0;
+    color: #333;
+    background-color: #999;
+    border-radius: 3px;
+}
+
+.navbar-default.navbar-shrink .navbar-nav>.active>a {
+    border-radius: 3px;
+    color: #333;
+    background-color: #7A0000;
+}
+
+
+.navbar-default.navbar-shrink .navbar-nav>li>.dropdown-menu{
+   margin-top:10px;
+   border-top:0px;
+   background:#222;
+   left:0px;
+   min-width: 100%;
+   padding-top:15px;
+   padding-bottom:5px;
+   color:#fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#bottone_totop {
+    width:50px; 
+    height:40px;
+    background-color:rgba(0, 0, 0, .3);
+    z-index:2000;
+    padding:0px; 
+    font-size:2.0em;
+    text-align:center; 
+    font-weight: bold;
+    color: whiteSmoke;
+    text-decoration: none;
+    position:fixed;
+    top:90%;
+    right:2%;
+    display:none;
+}
+
+#bottone_tobottom {
+    width:50px; 
+    height:40px;
+    background-color:rgba(0, 0, 0, .3);
+    z-index:2000;
+    padding:0px; 
+    font-size:2.0em;
+    text-align:center; 
+    font-weight: bold;
+    color: whiteSmoke;
+    text-decoration: none;
+    position:fixed;
+    top:80%;
+    right:45%;
+    
+}
