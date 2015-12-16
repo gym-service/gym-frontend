@@ -57,11 +57,7 @@ angular.module('app.statesconfig', ['ui.router'])
     .state('app.home', {
         url: '/home',
         templateUrl: 'templates/home.html',
-        controller : "HomeCtrl", 
-        //controller: function($scope){},
-        resolve: {
-          
-        },
+        //controller : "HomeCtrl"
         /*
         data: {
             permissions: {
@@ -72,123 +68,123 @@ angular.module('app.statesconfig', ['ui.router'])
     })
 
     .state('app.clublist', {
-    url: "/club", 
-    cache : true,
-    templateUrl: "templates/club.html",
-    controller : "ClubCtrl"  
+        url: "/club", 
+        cache : true,
+        templateUrl: "templates/club.html",
+        controller : "ClubCtrl"  
     })
 
     .state('app.clubdetail', {
-    url: "/club/:clubId",  
-    cache : true,
-    templateUrl: "templates/clubdetail.html",
-    controller : "ClubDetailCtrl"
+        url: "/club/:clubId",  
+        cache : true,
+        templateUrl: "templates/clubdetail.html",
+        controller : "ClubDetailCtrl"
     })
 
     .state('app.servizilist', {
-    url: "/servizi",
-    cache : true,
-    templateUrl: "templates/service.html",
-    controller : "ServiziCtrl"  
+        url: "/servizi",
+        cache : true,
+        templateUrl: "templates/service.html",
+        controller : "ServiziCtrl"  
     })
 
     .state('app.servizidetail', {
-    url: "/servizi",
-    cache : true,
-    templateUrl: "templates/servicedetail.html",
-    controller : "ServiziCtrl"  
+        url: "/servizi",
+        cache : true,
+        templateUrl: "templates/servicedetail.html",
+        controller : "ServiziCtrl"  
     })
 
     .state('app.trainerslist', {
-    url: "/servizi/trainers",
-    cache : true,
-    templateUrl: "templates/trainer.html",
-    controller : "TrainersCtrl"
+        url: "/servizi/trainers",
+        cache : true,
+        templateUrl: "templates/trainer.html",
+        controller : "TrainersCtrl"
     })
 
     .state('app.trainerdetail', {
-    url: "/servizi/trainer/:trainerId",
-    cache : true,
-    templateUrl: "templates/servizidetail.html",
-    controller : "TrainerDetailCtrl"
+        url: "/servizi/trainer/:trainerId",
+        cache : true,
+        templateUrl: "templates/servizidetail.html",
+        controller : "TrainerDetailCtrl"
     })
 
 
     .state('app.newslist', {
-    url: "/news",
-    cache : true,
-    templateUrl: "templates/trainer.html",
-    controller : "NewsCtrl"
+        url: "/news",
+        cache : true,
+        templateUrl: "templates/trainer.html",
+        controller : "NewsCtrl"
     })
 
     .state('app.newsdetail', {
-    url: "/news/:trainerId",
-    cache : true,
-    templateUrl: "templates/newsdetail.html",
-    controller : "NewsDetailCtrl"
+        url: "/news/:trainerId",
+        cache : true,
+        templateUrl: "templates/newsdetail.html",
+        controller : "NewsDetailCtrl"
     })
 
     .state('app.presslist', {
-    url: "/press",
-    cache : true,
-    templateUrl: "templates/press.html",
-    controller : "PressCtrl"
+        url: "/press",
+        cache : true,
+        templateUrl: "templates/press.html",
+        controller : "PressCtrl"
     })
 
     .state('app.pressdetail', {
-    url: "/press/:pressId",
-    cache : true,
-    templateUrl: "templates/pressdetail.html",
-    controller : "PressDetailCtrl"
+        url: "/press/:pressId",
+        cache : true,
+        templateUrl: "templates/pressdetail.html",
+        controller : "PressDetailCtrl"
     })
 
     .state('app.eventilist', {
-    url: "/event",
-    cache : true,
-    templateUrl: "templates/eventi.html",
-    controller : "EventCtrl"
+        url: "/eventi",
+        cache : true,
+        templateUrl: "templates/eventi.html",
+        controller : "EventiCtrl"
     })
 
     .state('app.eventidetail', {
-    url: "/eventi/:eventiId",
-    cache : true,
-    templateUrl: "templates/eventidetail.html",
-    controller : "EventiDetailCtrl"
+        url: "/eventi/:eventiId",
+        cache : true,
+        templateUrl: "templates/eventidetail.html",
+        controller : "EventiDetailCtrl"
     })
 
     .state('app.promozionilist', {
-    url: "/promozioni",
-    cache : true,
-    templateUrl: "templates/promozioni.html",
-    controller : "PromozioniCtrl"
+        url: "/promozioni",
+        cache : true,
+        templateUrl: "templates/promozioni.html",
+        controller : "PromozioniCtrl"
     })
 
     .state('app.promozionidetail', {
-    url: "/promozioni/:promozioniId",
-    cache : true,
-    templateUrl: "templates/promozionidetail.html",
-    controller : "PromozioniDetailCtrl"
+        url: "/promozioni/:promozioniId",
+        cache : true,
+        templateUrl: "templates/promozionidetail.html",
+        controller : "PromozioniDetailCtrl"
     })
 
     .state('app.contatti', {
-    url: "/contatti",
-    cache : false,
-    templateUrl: "templates/contatti.html",
-    controller : "ContattiCtrl"
+        url: "/contatti",
+        cache : false,
+        templateUrl: "templates/contatti.html",
+        controller : "ContattiCtrl"
     })
 
     .state('app.guestpass', {
-    url: "/guestpass",
-    cache : false,
-    templateUrl: "templates/guestpass.html",
-    controller : "GuestpassCtrl"
+        url: "/guestpass",
+        cache : false,
+        templateUrl: "templates/guestpass.html",
+        controller : "GuestpassCtrl"
     })
 
     .state('app.orarilezioni', {
-    url: "/orarilezioni",
-    cache : false,
-    templateUrl: "templates/orarilezioni.html",
-    controller : "OrarilezioniCtrl"
+        url: "/orarilezioni",
+        cache : false,
+        templateUrl: "templates/orarilezioni.html",
+        controller : "OrarilezioniCtrl"
     });
 
 

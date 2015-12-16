@@ -20,8 +20,6 @@ angular.module("app")
             };    
 
             
-
-
             $timeout(function(){
                 if($document.scrollTop() >= 600){
                     scope.bottoneToTop = true;    
@@ -39,15 +37,11 @@ angular.module("app")
                 if ($document.scrollTop() >= 600 && (scope.bottoneToTop==false)) {
                     scope.bottoneToTop = !scope.bottoneToTop;
                     $('.scrollToTop_d').fadeIn();
-                    //test per scendere
                     $('.scrollToBottom_d').fadeOut();
-                    //$('.navbar').addClass('navbar-shrink');
                 }
                 if ($document.scrollTop() < 600 && (scope.bottoneToTop==true)) {
                     $('.scrollToTop_d').fadeOut();
-                    //test per scendere
                     $('.scrollToBottom_d').fadeIn();
-                    //$('.navbar').removeClass('navbar-shrink');
                     scope.bottoneToTop = !scope.bottoneToTop
                 }
 

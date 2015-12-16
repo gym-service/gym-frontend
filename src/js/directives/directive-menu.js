@@ -22,7 +22,6 @@ angular.module("app")
                         setTimeout( scrollPage, 250 );
                     }
                 }, false );
-                //console.log(1, $window.scrollTop())
                 if($(window).scrollTop() >= changeHeaderOn){
                     scrollPage();
                 }
