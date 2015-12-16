@@ -19,11 +19,18 @@ angular.module("app")
                 $document.scrollTo(0, 700 ,500)      
             };    
 
+            
+
+
             $timeout(function(){
                 if($document.scrollTop() >= 600){
                     scope.bottoneToTop = true;    
+                    $('.scrollToTop_d').fadeIn();
+                    $('.scrollToBottom_d').fadeOut();
                 } else {
                     scope.bottoneToTop = false;    
+                    $('.scrollToTop_d').fadeOut();
+                    $('.scrollToBottom_d').fadeIn();
                 }
             })
             
