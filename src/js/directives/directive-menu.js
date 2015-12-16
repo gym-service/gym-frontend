@@ -22,6 +22,10 @@ angular.module("app")
                         setTimeout( scrollPage, 250 );
                     }
                 }, false );
+                //console.log(1, $window.scrollTop())
+                if($(window).scrollTop() >= changeHeaderOn){
+                    scrollPage();
+                }
             }
 
             function scrollPage() {
@@ -41,6 +45,7 @@ angular.module("app")
 
             init();
 
+            
             scope.$on('$destroy', function(){
                 window.removeEventListener('scroll', scrollListener);
             });

@@ -2,7 +2,7 @@
 "use strict";
 
 angular.module("app")
-.directive('goTop', ['$document', function ($document) {
+.directive('goTop', ['$document', '$timeout' ,function ($document, $timeout) {
     return {
         restrict: 'A',
         templateUrl : 'templates/go_top.html',
@@ -19,7 +19,14 @@ angular.module("app")
                 $document.scrollTo(0, 700 ,500)      
             };    
 
-            scope.bottoneToTop = false;
+            $timeout(function(){
+                if($document.scrollTop() >= 600){
+                    scope.bottoneToTop = true;    
+                } else {
+                    scope.bottoneToTop = false;    
+                }
+            })
+            
 
             handler = $document.on('scroll', function() {
                 if ($document.scrollTop() >= 600 && (scope.bottoneToTop==false)) {
